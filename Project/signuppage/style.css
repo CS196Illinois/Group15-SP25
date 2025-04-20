@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+  }
+  
+  body {
+    background-color: #edf3f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .signup-card {
+    background-color: white;
+    width: 500px;
+    padding: 60px 40px;
+    border-radius: 35px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .heading {
+    width: 80%;
+    margin-bottom: 10px;
+  }
+  
+  .login-link-btn {
+    background: none;
+    border: none;
+    color: #000;
+    font-size: 9px;
+    font-weight: 200;
+    font-family: 'Outfit', sans-serif;
+    cursor: pointer;
+    margin-top: 5px;
+    margin-bottom: 60px;
+  }
+  
+  .form-group {
+    text-align: left;
+    margin-bottom: 30px;
+  }
+  
+  .form-group label img {
+    height: 16px;
+    display: block;
+    margin-bottom: 6px;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="password"] {
+    width: 100%;
+    padding: 16px;
+    border: 1px solid #000;
+    border-radius: 10px;
+    font-size: 16px;
+    font-family: 'Outfit', sans-serif;
+  }
+  
+  .password-wrapper {
+    position: relative;
+  }
+  
+  .toggle-password-btn {
+    position: absolute;
+    top: 40%; /* shifted up from 50% */
+    right: 15px;
+    transform: translateY(-200%);
+    background: none;
+    border: none;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+    font-family: 'Outfit', sans-serif;
+    font-size: 14px;
+  }
+  
+  .toggle-password-btn img {
+    height: 22px;  /* increased from 15px */
+    width: 22px;   /* explicitly set width for consistency */
+  }
+  
+  .submit-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-top: 30px;
+  }
+  
+  .submit-btn img {
+    width: 100%;
+    border-radius: 12px;
+  }
+  

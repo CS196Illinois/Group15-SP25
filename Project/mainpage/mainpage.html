@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>KASA Events</title>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="nav-left">
+      <button class="icon-button" onclick="location.href='index.html'">
+        <img src="images/upcomingeventsimage/homebutton.png" alt="Home" class="icon" />
+      </button>
+    </div>
+    <div class="nav-center">
+      <img src="images/upcomingeventsimage/logo.png" alt="KASA Logo" class="logo" />
+    </div>
+    <div class="nav-right">
+        <button class="icon-button logout-button" onclick="alert('Logging out...')">
+            <img src="images/upcomingeventsimage/logoutbutton.png" alt="Logout" class="icon" />
+          </button>
+    </div>
+  </header>
+
+  <main class="main-container">
+    <!-- Upcoming Events -->
+    <div class="card">
+      <h2>Upcoming Events</h2>
+      <button class="view-more-button">Click to view more</button>
+      <div class="event-list">
+        <div class="event-row"><span>Event 1</span><span>1/1/2025</span></div>
+        <div class="event-row"><span>Event 2</span><span>1/2/2025</span></div>
+        <div class="event-row"><span>Event 3</span><span>1/3/2025</span></div>
+        <div class="event-row"><span>Event 4</span><span>1/4/2025</span></div>
+        <div class="event-row"><span>Event 5</span><span>1/5/2025</span></div>
+        <div class="event-row"><span>Event 6</span><span>1/6/2025</span></div>
+        <div class="event-row"><span>Event 7</span><span>1/7/2025</span></div>
+      </div>
+    </div>
+
+    <!-- Check-in for Events -->
+    <div class="card center-card">
+      <h2>Check-in for Events</h2>
+      <button class="checkin-button">Enter the event key<br>for check-in</button>
+    </div>
+
+    <!-- Attendance History -->
+    <div class="card">
+      <h2>Attendance History</h2>
+      <button class="view-more-button">Click to view more</button>
+      <div class="event-list">
+        <div class="event-row"><span>Event 8</span><span class="present">Present</span></div>
+        <div class="event-row"><span>Event 9</span><span class="present">Present</span></div>
+        <div class="event-row"><span>Event 10</span><span class="present">Present</span></div>
+        <div class="event-row"><span>Event 11</span><span class="absent">Absent</span></div>
+        <div class="event-row"><span>Event 12</span><span class="absent">Absent</span></div>
+        <div class="event-row"><span>Event 13</span><span class="present">Present</span></div>
+        <div class="event-row"><span>Event 14</span><span class="present">Present</span></div>
+      </div>
+    </div>
+  </main>
+</body>
+</html>

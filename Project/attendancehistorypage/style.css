@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+  }
+  
+  body {
+    background-color: #f2f8fb;
+    overflow-y: auto;
+    height: 100vh;
+  }
+  .logo {
+    height: 180px; 
+    transform: translateY(20px);
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 6px 20px; /* Reduced padding */
+    height: 120px; /* Optional: add a fixed height if needed */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  .icon-button {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border: none;
+    background: none;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+  }
+
+  .icon-button img[alt="Logout"] {
+    height: 50px;             
+    transform: translate(10px, 30px);     
+  }
+
+  .icon-button img[alt="Home"] {
+    height: 40px; 
+    transform: translate(30px, 25px);     
+  }
+  
+  /* Main Content */
+  .main-content {
+    padding: 60px;
+    
+  }
+  .header-row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+    gap: 10px;
+    text-align: center;
+  }
+  
+  .header-row h1 {
+    font-size: 28px;
+    font-weight: 700;
+    margin: 0;
+  }
+  
+  .points {
+    font-size: 18px;
+    font-weight: 500;
+  }
+  
+  /* Table */
+  .history-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 18px;
+  }
+  
+  .history-table th,
+  .history-table td {
+    padding: 16px 12px;
+    text-align: left;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .history-table th {
+    font-weight: 500;
+  }
+  
