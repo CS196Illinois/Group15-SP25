@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Create Account</title>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="signup-card">
+    <img src="images/createanaccount.png" alt="Create an account" class="heading" />
+    
+    <a href="../loginpage/loginpage.html"> 
+      <button class="login-link-btn">
+        <img src="images/alreadyhaveaccount.png" alt="Already have an account" />
+      </button>
+    </a>
+   
+
+    <div class="form-group">
+      <label for="profile"><img src="images/profilename.png" alt="Profile Name" /></label>
+      <input type="text" id="profile" />
+    </div>
+
+    <div class="form-group">
+      <label for="email"><img src="images/Email.png" alt="Email" /></label>
+      <input type="email" id="email" />
+    </div>
+
+    <div class="form-group">
+      <label for="password"><img src="images/password.png" alt="Password" /></label>
+      <div class="password-wrapper">
+        <input type="password" id="password" />
+        <button class="toggle-password-btn" onclick="togglePassword()">
+          <img src="images/eye-slash.png" alt="Toggle visibility" id="toggle-icon" />
+          <span id="toggle-text">Hide</span>
+        </button>
+      </div>
+    </div>
+
+    <a href="../frontpage/frontpage.html"> 
+      <button class="submit-btn">
+        <img src="images/createaccountbutton.png" alt="Create an account" />
+      </button>
+    </div>
+    </a>
+    
+
+  <script>
+    function togglePassword() {
+      const passwordInput = document.getElementById("password");
+      const icon = document.getElementById("toggle-icon");
+      const text = document.getElementById("toggle-text");
+
+      if (passwordInput.type === "password") {
+        passwordInput.type = "text";
+        icon.src = "images/openeye.png"; // visible eye icon
+        text.textContent = "Show";
+      } else {
+        passwordInput.type = "password";
+        icon.src = "images/eye-slash.png"; // slashed eye icon
+        text.textContent = "Hide";
+      }
+    }
+  </script>
+</body>
+</html>

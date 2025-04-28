@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Attendance History</title>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <header class="navbar">
+      <a href="../mainpage/mainpage.html"> 
+        <button class="icon-button" onclick="location.href='index.html'">
+          <img src="images/homebutton.png" alt="Home" />
+        </button>
+      </a>
+        
+        <img src="images/logo.png" alt="KASA Logo" class="logo" />
+        <a href="../logoutpage/logoutpage.html"> 
+          <button class="icon-button" onclick="alert('Logging out')">
+            <img src="images/logoutbutton.png" alt="Logout" />
+          </button>
+        </a>
+        
+      </header>
+
+      <main class="checkin-container">
+        <h1 class="title">Check-in</h1>
+        <label class="event-label" for="event-key">Event Key</label>
+        <input type="text" id="event-key" class="event-input" placeholder="Enter the event key...">
+        <a href="../attendancehistorypage/attendance.html"> 
+          <button class="checkin-btn">Check-in</button>
+        </a>
+      </main>
+    </body>
+    </html>
+    

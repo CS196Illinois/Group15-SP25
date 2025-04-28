@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+  }
+  
+  body {
+    background-color: #f6fcff;
+    color: #000;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+    background-color: white;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.05);
+    height: 120px; /* Set fixed height for the white rectangle */
+    overflow: hidden; /* Prevent logo from overflowing visually */
+  }
+  
+  .nav-left,
+  .nav-right {
+    flex: 1;
+  }
+  
+  .nav-center {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .icon-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .icon-button img {
+    width: 32px;
+  }
+  
+  .logo {
+    height: 180px; /* increased from 200px */
+    object-fit: contain;
+    transform: translateY(15px);
+  }
+
+
+  .icon-button img[alt="Logout"] {
+    height: 50px;  
+    width: 130px;           
+    transform: translate(350px, 30px);     
+  }
+
+  .icon-button img[alt="Home"] {
+    height: 40px; 
+    width: 115px; 
+    transform: translate(30px, 25px);     
+  }
+  
+  .main-content {
+    padding: 30px;
+    background-color: #eaf4f8;
+    min-height: 100vh;
+  }
+  
+  .main-content h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 28px;
+    font-weight: 700;
+  }
+  
+  .events-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .event-row {
+    background-color: white;
+    border-radius: 18px;
+    padding: 18px 25px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+  }
+  
